@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">
+            Temperature Converter
+        </h1>
+        <div class="converter">
+            <div class="input-grp">
+                <label for="inputTemp">From</label>
+                <input type="number" id="inputTemp" placeholder="Enter Temperature">
+                <select id="inputUnit">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+            <button id="swapBtn" aria-label="Swap units">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 3L4 7l4 4"/>
+                    <path d="M4 7h16"/>
+                    <path d="m16 21 4-4-4-4"/>
+                    <path d="M20 17H4"/>
+                </svg>
+            </button>
+            <div class="input-grp">
+                <label for="output-grp">To</label>
+                <input type="number" id="outputTemp" readonly placeholder="Converted Temperature">
+                <select id="outputUnit">
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <p class="instruction">Enter a value and select units to convert</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

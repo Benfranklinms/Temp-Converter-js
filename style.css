@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(306deg, #6a11cb 48%, #2575fc);
+}
+
+.container{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 1px rgb(255, 255, 255);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #6a11cb;
+}
+
+.converter{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.input-grp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+label{
+    font-weight: bold;
+    color:  #6a11cb;
+}
+
+input, select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #00838f;
+    box-shadow: 0 0 0 2px rgba(0, 131, 143, 0.2);
+}
+
+#swapBtn{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:  #6a11cb;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#swapBtn:hover {
+    background-color: #4c1388;
+}
+
+.instruction{
+    font-size: 0.9rem;
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+}
